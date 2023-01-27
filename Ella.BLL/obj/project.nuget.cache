@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "57PnRvm9rTyhaYU1WBgpG2x3Z7tKY/KowFUqoKxgcFPt8bN/JDS+mV5dTTpx4rUJKtY10sua43YgB534nMpnfQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\Ella.BLL\\Ella.BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Khalilbay\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\Khalilbay\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Khalilbay\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,81 @@
+﻿@using Ella.Core.Entity
+@using EllaSuper.ViewModels
+@model AboutViewModel
+@{
+    ViewData["Title"] = "Index";
+    var abouts = Model.Abouts;
+    var teams = Model.Teams;
+}
+<main class="main">
+    <div class="page page-about-us-2 ">
+        <div class="about-us-header">
+            <div class="container container-1170">
+                <nav class="breadcrumb breadcrumb-center justify-start text-center ">
+                    <a class="link-underline" href="#"><span class="text">Home</span></a>
+                    <span class="separate" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"></path></svg></span>
+                    <span class="bread-text">About Us</span>
+                </nav>
+                <div class="page-heading">
+                    <h3 class="page-title text-center uppercase">
+                        ABOUT US
+                    </h3>
+                </div>
+            </div>
+        </div><!-- END: Page Header -->
+        <v class="page-content">
+            <div class="container container-1170">
+                <h3 class="header-title uppercase text-center">
+                    BEHIND THE SCENE
+                </h3>
+                @foreach (var about in abouts)
+                {
+                    <div class="halo-block banner-with-text">
+                        <div class="row block-wrapper">
+                            <div class="col halo-block-banner">
+                                <div class="img-box">
+                                    <a href="#" class="animate-scale image image-adapt" style="padding-top: 77.19298245614036%">
+                                        <img src="~/assets/images/about/@about.ImageUrl" alt="Banner with text">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col halo-block-content">
+                                <div class="content-box text-center">
+                                    <h3 class="title">
+                                       @about.Title
+                                    </h3>
+                                    <p class="desc">
+                                            @about.Description
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                @foreach (var team in teams)
+                {
+                    <div style="margin:1.25rem;" class=" text-center">
+                        <h3 class="title">MEET THE TEAM</h3>
+                        <p class="desc">
+                            @team.Description
+                        </p>
+                    </div>
+                    <div class="halo-row-item col-12 col-md-6 col-lg-4">
+                        <div class="custom-service-item">
+                            <div class="img-box">
+                                <a href="#" class="image image-adapt" style="padding-top: 100%">
+                                    <img src="~/assets/images/team/@team.ImageUrl" alt="Spotlight 1">
+                                </a>
+                            </div>
+                            <div class="content text-center">
+                                <h3 class="name">
+                                    @team.Name
+                                </h3>
+                                <p class="position">@team.Position</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div><!-- END: Page Content -->
+    </div><!-- END: Page -->
+</main>

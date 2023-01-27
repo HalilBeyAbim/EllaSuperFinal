@@ -1,0 +1,12 @@
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\bin\Debug\net6.0\Ella.Core.deps.json
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\bin\Debug\net6.0\Ella.Core.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\bin\Debug\net6.0\Ella.Core.pdb
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\obj\Debug\net6.0\Ella.Core.csproj.AssemblyReference.cache
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\obj\Debug\net6.0\Ella.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\obj\Debug\net6.0\Ella.Core.AssemblyInfoInputs.cache
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\obj\Debug\net6.0\Ella.Core.AssemblyInfo.cs
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\obj\Debug\net6.0\Ella.Core.csproj.CoreCompileInputs.cache
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\obj\Debug\net6.0\Ella.Core.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\obj\Debug\net6.0\refint\Ella.Core.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\obj\Debug\net6.0\Ella.Core.pdb
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.Core\obj\Debug\net6.0\ref\Ella.Core.dll

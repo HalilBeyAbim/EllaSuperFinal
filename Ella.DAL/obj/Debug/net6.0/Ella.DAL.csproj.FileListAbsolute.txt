@@ -1,0 +1,17 @@
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\bin\Debug\net6.0\Ella.DAL.deps.json
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\bin\Debug\net6.0\Ella.DAL.runtimeconfig.json
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\bin\Debug\net6.0\Ella.DAL.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\bin\Debug\net6.0\Ella.DAL.pdb
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\Ella.DAL.csproj.AssemblyReference.cache
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\Ella.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\Ella.DAL.AssemblyInfoInputs.cache
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\Ella.DAL.AssemblyInfo.cs
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\Ella.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\Ella.DAL.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\refint\Ella.DAL.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\Ella.DAL.pdb
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\Ella.DAL.genruntimeconfig.cache
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\ref\Ella.DAL.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\bin\Debug\net6.0\Ella.Core.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\bin\Debug\net6.0\Ella.Core.pdb
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.DAL\obj\Debug\net6.0\Ella.DAL.csproj.CopyComplete
