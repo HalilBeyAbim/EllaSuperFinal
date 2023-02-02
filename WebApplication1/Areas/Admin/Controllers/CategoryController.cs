@@ -19,20 +19,6 @@ namespace EllaSuper.Areas.Admin.Controllers
             var categories = await _appDbContext.Categories.ToListAsync();
             return View(categories);
         }
-
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Create(CategoryCreateViewModel model)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return View();
-        //    }
-        //    await _context.Categories.AddAsync(category);
-        //    await _context.SaveChangesAsync();
-        //    return RedirectToAction(nameof(Index));
-        //}
-
         public IActionResult Create()
         {
             return View();

@@ -13,5 +13,9 @@ namespace Ella.BLL.Helpers
         public static string AboutPath;
         public static string TeamPath;
         public static string GalleryPath;
+        public static string ProductPath;
+
+        public const string AdminRole = "Admin";
+        public const string UserRole = "User";
     }
 }

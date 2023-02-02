@@ -52,23 +52,23 @@ namespace EllaSuper.Areas.Admin.Controllers
         {
             if (id == null)
                 return NotFound();
-            var gallery = await _AppDbContext.Galleries.FindAsync(id);
+            var gallery = await _AppDbContext.Galleries.FirstOrDefaultAsync(e => e.Id == id);
             if (gallery == null)
-                return NotFound();   
-            var galleryupdatevie = new GalleryUpdateViewModel
+                return NotFound();
+            var galleryUpdateViewModel = new GalleryUpdateViewModel
             {
                 Id = gallery.Id,
                 ImageUrl = gallery.ImageUrl,
             };
-            return View(gallery);
+            return View(galleryUpdateViewModel);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int? id, GalleryUpdateViewModel model)
+        public async Task<IActionResult> Update(GalleryUpdateViewModel model)
         {
             if (!ModelState.IsValid)
                 return View(model);
-            var gallery = await _AppDbContext.Galleries.FirstOrDefaultAsync(e => e.Id == id);
+            var gallery = await _AppDbContext.Galleries.FirstOrDefaultAsync(e => e.Id == model.Id);
             if (gallery == null)
                 return NotFound();
             if (model.Image != null)
@@ -86,28 +86,19 @@ namespace EllaSuper.Areas.Admin.Controllers
                 var unicalName = await model.Image.GenerateFile(Constants.GalleryPath);
                 gallery.ImageUrl = unicalName;
             }
-            if (model.Image == null)
-            {
-                model.ImageUrl = gallery.ImageUrl;
-            }
-
             await _AppDbContext.SaveChangesAsync();
-            
             return RedirectToAction(nameof(Index));
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(GalleryUpdateViewModel model)
+        public async Task<IActionResult> Delete(int? id)
         {
-            if (!ModelState.IsValid)
-                return View(model);
-            var gallery = await _AppDbContext.Galleries.FindAsync(model.Id);
+            if (id == null)
+                return NotFound();
+            var gallery = await _AppDbContext.Galleries.FirstOrDefaultAsync(e => e.Id == id);
             if (gallery == null)
                 return NotFound();
             _AppDbContext.Galleries.Remove(gallery);
             await _AppDbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
     }
 }

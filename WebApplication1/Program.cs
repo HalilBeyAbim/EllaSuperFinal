@@ -1,5 +1,8 @@
 using Ella.BLL.Helpers;
+using Ella.Core.Entity;
 using Ella.DAL.DAL;
+using Ella.DAL.DAL.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection.Metadata;
@@ -8,7 +11,7 @@ namespace EllaSuperFinal
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public async static Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -28,20 +31,31 @@ namespace EllaSuperFinal
                     });
 
             });
-            //builder.Services.AddDbContext<AppDbContext>(options =>
-            //{
-            //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-            //    builder =>
-            //    {
-            //        builder.MigrationsAssembly("EllaSuperFinal");
-            //    });
-            //});
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+               builder =>
+               {
+                   builder.MigrationsAssembly(nameof(EllaSuper));
+               });
+            });
+            builder.Services.AddIdentity<User, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 3;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.User.RequireUniqueEmail = true;
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+            builder.Services.Configure<AdminUser>(builder.Configuration.GetSection("AdminUser"));
 
             Constants.RootPath = builder.Environment.WebRootPath;
             Constants.BlogPath = Path.Combine(Constants.RootPath, "assets","images", "blog");
             Constants.AboutPath = Path.Combine(Constants.RootPath, "assets", "images", "about");
             Constants.TeamPath = Path.Combine(Constants.RootPath, "assets", "images", "team");
             Constants.GalleryPath = Path.Combine(Constants.RootPath, "assets", "images", "gallery");
+            Constants.ProductPath = Path.Combine(Constants.RootPath, "assets", "images", "product");
 
 
             var app = builder.Build();
@@ -56,6 +70,12 @@ namespace EllaSuperFinal
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            using (var scope = app.Services.CreateScope())
+            {
+                var serviceProvider = scope.ServiceProvider;
+                var dataInitializer = new DataIntializer(serviceProvider);
+                await dataInitializer.SeedData();
+            }
 
             app.UseRouting();
 
@@ -73,7 +93,7 @@ namespace EllaSuperFinal
                     );
             });
 
-            app.Run();
+            await app.RunAsync();
         }
     }
 }

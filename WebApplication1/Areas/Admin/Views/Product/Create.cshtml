@@ -1,0 +1,132 @@
+﻿@model ProductCreateViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"> EduHomeEdit /</span> Course Tables <span> /Create </span></h4>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mb-4">
+                <h5 class="card-header">Course Tables</h5>
+                <div class="card-body">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <form method="post" asp-action="Create" enctype="multipart/form-data">
+                        <div>
+                            <label asp-for="Title" class="form-label">Title</label>
+                            <input asp-for="Title"
+                                   class="form-control"
+                                   id="defaultFormControlInput"
+                                   placeholder="Title"
+                                   aria-describedby="defaultFormControlHelp" />
+                            <span class="text-danger" asp-validation-for="Title"></span>
+
+                        </div>
+                        <div>
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <input asp-for="Description"
+                                   class="form-control"
+                                   id="defaultFormControlInput"
+                                   placeholder="Description"
+                                   aria-describedby="defaultFormControlHelp" />
+                            <span class="text-danger" asp-validation-for="Description"></span>
+                        </div>
+                        <div>
+                            <label asp-for="Price" class="form-label">Price</label>
+                            <input asp-for="Price"
+                                   class="form-control"
+                                   id="defaultFormControlInput"
+                                   placeholder="Price"
+                                   aria-describedby="defaultFormControlHelp" />
+                            <span class="text-danger" asp-validation-for="Price"></span>
+
+                        </div>
+
+                        <div>
+                            <label asp-for="Subtitle" class="form-label">Subtitle</label>
+                            <input asp-for="Subtitle"
+                                   class="form-control"
+                                   id="defaultFormControlInput"
+                                   placeholder="Subtitle"
+                                   aria-describedby="defaultFormControlHelp" />
+                            <span class="text-danger" asp-validation-for="Subtitle"></span>
+
+                        </div>
+                        <div>
+                            <label asp-for="Barcode" class="form-label">Barcode</label>
+                            <input asp-for="Barcode"
+                                   class="form-control"
+                                   id="defaultFormControlInput"
+                                   placeholder="HowToApply"
+                                   aria-describedby="defaultFormControlHelp" />
+                            <span class="text-danger" asp-validation-for="Barcode"></span>
+
+                        </div>
+                        <div>
+                            <label asp-for="Discount" class="form-label">Discount</label>
+                            <input asp-for="Discount"
+                                   class="form-control"
+                                   id="defaultFormControlInput"
+                                   placeholder="Certification"
+                                   aria-describedby="defaultFormControlHelp" />
+                            <span class="text-danger" asp-validation-for="Discount"></span>
+
+                        </div>
+                        <div>
+                            <label asp-for="DiscountPrice" class="form-label">Discount Price</label>
+                            <input asp-for="DiscountPrice"
+                                   class="form-control"
+                                   id="defaultFormControlInput"
+                                   placeholder="StartTime"
+                                   aria-describedby="defaultFormControlHelp" />
+                            <span class="text-danger" asp-validation-for="DiscountPrice"></span>
+
+                        </div>
+                        <div>
+                            <label asp-for="Image" class="form-label">Image</label>
+                            <input asp-for="Image"
+                                   class="form-control"
+                                   id="defaultFormControlInput"
+                                   placeholder="Image"
+                                   aria-describedby="defaultFormControlHelp" />
+                            <span class="text-danger" asp-validation-for="Image"></span>
+
+                        </div>
+                        <div>
+                            <label asp-for="CategoryId" class="form-label">Categories</label>
+                            <select asp-for="CategoryId"
+                                    asp-items="@Model?.Categories"
+                                    class="form-control"
+                                    id="defaultFormControlInput"
+                                    aria-describedby="defaultFormControlHelp"></select>
+                            <span class="text-danger" asp-validation-for="CategoryId"></span>
+                        </div>
+                        <div>
+                            <label asp-for="BrandId" class="form-label">Brands</label>
+                            <select asp-for="BrandId"
+                                    asp-items="@Model?.Brands"
+                                    class="form-control"
+                                    id="defaultFormControlInput"
+                                    aria-describedby="defaultFormControlHelp"></select>
+                            <span class="text-danger" asp-validation-for="BrandId"></span>
+                        </div>
+                        <div>
+                            <label asp-for="SizeId" class="form-label">Sizes</label>
+                            <select asp-for="SizeId"
+                                    asp-items="@Model?.Sizes"
+                                    class="form-control"
+                                    id="defaultFormControlInput"
+                                    aria-describedby="defaultFormControlHelp"></select>
+                            <span class="text-danger" asp-validation-for="SizeId"></span>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-success mt-5 "> Create  </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
