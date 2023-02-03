@@ -1,4 +1,5 @@
-﻿
+﻿@using EllaSuper.Service
+@inject LayoutService layoutService
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,13 +9,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ella Multipurpose Layouts - HTML5/CSS3 Tempalte</title>
+    <title>Ella</title>
     <meta name="keywords" content="HTML5/CSS3 Template">
     <meta name="description" content="Ella - Bootstrap eCommerce Template">
     <meta name="author" content="halothemes">
     <meta name="theme-color" content="#ffffff">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="~/assets/images/icons/favicon.png">
+    <link rel="shortcut icon" href="~/assets/images/icons/ella_logo.jpg" type="image/x-icon">
     <!-- Plugins bootstrap CSS File -->
     <link rel="stylesheet" href="~/assets/lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="~/assets/lib/bootstrap/bootstrap-grid.min.css">
@@ -66,7 +67,7 @@
                         <div class="header-top--right header__icons text-right clearfix">
                             <div class="header-top-right-group">
                                 <div class="customer-service-text">
-                                    Customer Service <a href="tel:091%20234-ELLA">091 234-ELLA</a>
+                                    Ouer Office <a href="tel://@layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="phonenumber")?.Value ">@layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="phonenumber")?.Value</a>
                                 </div>
                                 <div class="header-language_currency">
                                     <div class="halo-language" data-dropdown-toggle>

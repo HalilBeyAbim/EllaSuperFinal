@@ -6,7 +6,7 @@ using System.Reflection.Metadata;
 namespace EllaSuperFinal.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles=Constants.AdminRole)]
+    [Authorize(Roles = Constants.AdminRole)]
     public class BaseController : Controller
     {
         

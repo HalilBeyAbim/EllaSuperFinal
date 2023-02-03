@@ -19,6 +19,13 @@ namespace Ella.DAL.DAL
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Size> Sizes { get; set; }
         public DbSet<Product> Product { get; set; }
+        public DbSet<Setting> Settings { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Setting>().HasIndex(x => x.Key).IsUnique();
+            base.OnModelCreating(modelBuilder);  
+        }
         
-    }   
+    }
 }

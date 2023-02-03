@@ -1,9 +1,13 @@
 ﻿@using Ella.Core.Entity
 @using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+@using Microsoft.AspNetCore.Mvc.RazorPages
+@using Microsoft.Extensions.DependencyInjection
+@using Ella.BLL.Helpers;
 @inject UserManager<User> _userManager
 @{
-    var user = await _userManager.FindByNameAsync(User.Identity.Name);
-    var fullName = $"{user.FirstName} {user.LastName}";
+     var user = await _userManager.FindByNameAsync(User.Identity.Name);
+     var fullName = $"{user.FirstName} {user.LastName}";
   }
 <!DOCTYPE html>
 
@@ -623,7 +627,7 @@
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="~/admin/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                                       <img src="~/admin/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
@@ -661,7 +665,7 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a asp-area="default" asp-controller="account" asp-action="logout" class="dropdown-item" href="auth-login-basic.html">
+                                        <a asp-area="default" asp-controller="account" asp-action="logout" class="dropdown-item">
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Log Out</span>
                                         </a>

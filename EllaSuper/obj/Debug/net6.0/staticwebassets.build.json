@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xXxeCn3HnGbd2rv7ihMw6SIrk7c5DLCzswCTnQME0Rw=",
+  "Hash": "RZ75aTDgAmNXjVThHxhAOYY2O1LstXLG+V8JgXG2hWY=",
   "Source": "EllaSuper",
   "BasePath": "_content/EllaSuper",
   "Mode": "Default",
@@ -14414,6 +14414,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\gallery\\e2f69bb5-5377-4a84-b5c1-5afb0072d9a1-tinywow_Bütün Fayllar (6)_6748361_1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\icons\\ella_logo.jpg",
+      "SourceId": "EllaSuper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\",
+      "BasePath": "_content/EllaSuper",
+      "RelativePath": "assets/images/icons/ella_logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\icons\\ella_logo.jpg"
     },
     {
       "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\icons\\favicon.png",

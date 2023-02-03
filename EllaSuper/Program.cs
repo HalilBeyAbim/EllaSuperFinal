@@ -2,6 +2,7 @@ using Ella.BLL.Helpers;
 using Ella.Core.Entity;
 using Ella.DAL.DAL;
 using Ella.DAL.DAL.Data;
+using EllaSuper.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -36,6 +37,8 @@ namespace EllaSuperFinal
             }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
             builder.Services.Configure<AdminUser>(builder.Configuration.GetSection("AdminUser"));
 
+            builder.Services.AddScoped<LayoutService>();
+            
             Constants.RootPath = builder.Environment.WebRootPath;
             Constants.BlogPath = Path.Combine(Constants.RootPath, "assets","images", "blog");
             Constants.AboutPath = Path.Combine(Constants.RootPath, "assets", "images", "about");
@@ -65,6 +68,7 @@ namespace EllaSuperFinal
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
