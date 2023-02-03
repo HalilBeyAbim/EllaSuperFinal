@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using Ella.Core.Entity
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<User> _userManager
+@{
+    var user = await _userManager.FindByNameAsync(User.Identity.Name);
+    var fullName = $"{user.FirstName} {user.LastName}";
+  }
+<!DOCTYPE html>
 
 <!-- =========================================================
 * Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
@@ -620,7 +627,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block">John Doe</span>
+                                                    <span class="fw-semibold d-block">@fullName</span>
                                                     <small class="text-muted">Admin</small>
                                                 </div>
                                             </div>
@@ -654,7 +661,7 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                        <a asp-area="default" asp-controller="account" asp-action="logout" class="dropdown-item" href="auth-login-basic.html">
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Log Out</span>
                                         </a>

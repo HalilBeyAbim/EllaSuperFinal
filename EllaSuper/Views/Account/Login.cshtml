@@ -1,0 +1,51 @@
+﻿@using EllaSuper.ViewModels
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="page register-page">
+	<div class="container container-1170">
+		<div class="heading">
+			<nav class="breadcrumb breadcrumb-left" aria-label="breadcrumbs">
+				<a class="link" href="index.html">Home</a>
+				<span class="separate" aria-hidden="true">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"></path>
+					</svg>
+				</span>
+				<span> Sign in</span>
+			</nav>
+			<h3 class="page-title text-left uppercase">
+                Sign in
+			</h3>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-6 sign-in">
+				<div class="login-heading">
+					<h3 class="title">Sign In</h3>
+					<p class="desc">Please enter your Username and password below to access your account</p>
+				</div>
+				<form asp-action="login" method="post">
+					<div asp-validation-summary="All" class="text-danger"></div>
+					<input type="hidden" name="form_type" value="contact"><input type="hidden" name="utf8" value="✓">
+					<div class="form-field">
+						<label class="form-label">Username<span class="red-asterisk">*</span></label>
+						<input class="form-input form-input-placeholder" asp-for="UserName" placeholder="User Name" >
+					</div>
+					<div class="form-field">
+						<label class="form-label" for="password">Password<span class="red-asterisk">*</span></label>
+						<input id="password" class="form-input form-input-placeholder" asp-for="Password" placeholder="Password" >
+					</div>
+			         	<div class="button-register">
+					         <button type="submit" class="button button-2 uppercase">login</button>
+					         <a class="link-underline" href="#"><span class="text">Lost your password?</span></a>
+				        </div><!-- End register button -->
+				</form>
+			</div>
+			<div class="col-12 col-md-6 col-lg-6 register">
+			</div>
+		</div>
+	</div>
+	<!-- End header -->
+</div>

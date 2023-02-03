@@ -29,8 +29,6 @@ namespace EllaSuperFinal
             });
             builder.Services.AddIdentity<User, IdentityRole>(options =>
             {
-                options.Password.RequireDigit = false;
-                options.Password.RequiredLength = 3;
                 options.Password.RequireLowercase = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = false;

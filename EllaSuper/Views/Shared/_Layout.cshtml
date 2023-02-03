@@ -615,12 +615,16 @@
                                     <span class="text"> My Wish List</span>
                                 </a>
                                 <div class="customer-links">
-                                    <a class="header__link--account link-underline" id="customer_login_link" href="#" data-open-auth-sidebar>
+                                    <a class="header__link--account link-underline" id="customer_login_link" asp-controller="account" asp-action="login">
                                         <span class="text">Sign In</span>
                                     </a>
                                     <span class="or-text">or</span>
-                                    <a class="header__link--account link-underline" id="customer_register_link" href="register.html">
+                                    <a class="header__link--account link-underline" id="customer_register_link"  asp-controller="account" asp-action="register">
                                         <span class="text">Create an account</span>
+                                    </a>
+                                    <span class="or-text"> ♥ </span>
+                                    <a class="header__link--account link-underline" id="customer_register_link" asp-area="default" asp-controller="account" asp-action="logout">
+                                        <span class="text">Logout</span>
                                     </a>
                                 </div>
                             </div>
