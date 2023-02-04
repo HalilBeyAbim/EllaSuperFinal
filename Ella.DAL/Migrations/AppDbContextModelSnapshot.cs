@@ -263,10 +263,6 @@ namespace Ella.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -356,6 +352,52 @@ namespace Ella.DAL.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("Ella.Core.Entity.WishList", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("WishList");
+                });
+
+            modelBuilder.Entity("Ella.Core.Entity.WishListProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WishListId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("WishListId");
+
+                    b.ToTable("WishListProduct");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -518,6 +560,25 @@ namespace Ella.DAL.Migrations
                     b.Navigation("Size");
                 });
 
+            modelBuilder.Entity("Ella.Core.Entity.WishListProduct", b =>
+                {
+                    b.HasOne("Ella.Core.Entity.Product", "Product")
+                        .WithMany("WishListProducts")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Ella.Core.Entity.WishList", "WishList")
+                        .WithMany("WishListProducts")
+                        .HasForeignKey("WishListId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("WishList");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -579,9 +640,19 @@ namespace Ella.DAL.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("Ella.Core.Entity.Product", b =>
+                {
+                    b.Navigation("WishListProducts");
+                });
+
             modelBuilder.Entity("Ella.Core.Entity.Size", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Ella.Core.Entity.WishList", b =>
+                {
+                    b.Navigation("WishListProducts");
                 });
 #pragma warning restore 612, 618
         }

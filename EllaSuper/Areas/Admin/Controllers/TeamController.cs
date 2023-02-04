@@ -54,7 +54,6 @@ namespace EllaSuper.Areas.Admin.Controllers
                 Name = model.Name,
                 Position = model.Position,
                 ImageUrl = unicalName,
-                Description = model.Description,
             };
             await _AppDbContext.Teams.AddAsync(team);
             await _AppDbContext.SaveChangesAsync();
@@ -69,7 +68,6 @@ namespace EllaSuper.Areas.Admin.Controllers
             {
                 Name = team.Name,
                 Position = team.Position,
-                Description = team.Description,
                 ImageUrl = team.ImageUrl,
             };
             return View(model);
@@ -109,7 +107,6 @@ namespace EllaSuper.Areas.Admin.Controllers
             
             team.Name = model.Name;
             team.Position = model.Position;
-            team.Description = model.Description;
             await _AppDbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

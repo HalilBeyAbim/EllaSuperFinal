@@ -51,15 +51,16 @@
                         </div>
                     </div>
                 }
-                @foreach (var team in teams)
-                {
+                
                     <div style="margin:1.25rem;" class=" text-center">
                         <h3 class="title">MEET THE TEAM</h3>
                         <p class="desc">
-                            @team.Description
+                        We are a team of passionate people who love to create beautiful things.
                         </p>
                     </div>
-                    <div class="halo-row-item col-12 col-md-6 col-lg-4">
+                @foreach (var team in teams)
+                {
+                    <div style="width:360px; height:388px; display:flex ; justify-content:space-between;" class="d-inline-block m-2 g-4">
                         <div class="custom-service-item">
                             <div class="img-box">
                                 <a href="#" class="image image-adapt" style="padding-top: 100%">

@@ -22,6 +22,7 @@ namespace Ella.Core.Entity
         public Size Size { get; set; }
         public Brand Brand { get; set; }
         public Category Category { get; set; }
-        
+        public ICollection<WishListProduct> WishListProducts { get; set; }
+
     }
 }
