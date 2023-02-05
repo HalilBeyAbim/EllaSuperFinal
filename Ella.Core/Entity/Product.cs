@@ -13,9 +13,9 @@ namespace Ella.Core.Entity
         public string Barcode { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
-        public string Price { get; set; }
-        public string Discount { get; set; }
-        public string DiscountPrice { get; set; }
+        public decimal Price { get; set; }
+        public byte Discount { get; set; }
+        public decimal DiscountPrice { get; set; }
         public int SizeId { get; set; }
         public int BrandId { get; set; }
         public int CategoryId { get; set; }

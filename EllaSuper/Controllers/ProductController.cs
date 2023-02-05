@@ -26,8 +26,9 @@ namespace EllaSuper.Controllers
                 Sizes = sizes,
                 Brands = brands
             };
-
+           
             return View(viewModel);
         }
+        
     }
 }

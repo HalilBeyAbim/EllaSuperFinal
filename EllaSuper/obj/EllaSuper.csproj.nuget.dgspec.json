@@ -32,7 +32,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\Ella.DAL\\Ella.DAL.csproj": {
+                "projectPath": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\Ella.DAL\\Ella.DAL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

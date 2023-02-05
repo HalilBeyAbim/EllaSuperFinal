@@ -14,4 +14,8 @@
     <Folder Include="Helpers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Ella.DAL\Ella.DAL.csproj" />
+  </ItemGroup>
+
 </Project>

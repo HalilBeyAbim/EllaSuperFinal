@@ -10,3 +10,8 @@ C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.BLL\obj\Debug\net6.0\Ella.BLL.dll
 C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.BLL\obj\Debug\net6.0\refint\Ella.BLL.dll
 C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.BLL\obj\Debug\net6.0\Ella.BLL.pdb
 C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.BLL\obj\Debug\net6.0\ref\Ella.BLL.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.BLL\bin\Debug\net6.0\Ella.Core.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.BLL\bin\Debug\net6.0\Ella.Core.pdb
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.BLL\obj\Debug\net6.0\Ella.BLL.csproj.CopyComplete
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.BLL\bin\Debug\net6.0\Ella.DAL.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\Ella.BLL\bin\Debug\net6.0\Ella.DAL.pdb
