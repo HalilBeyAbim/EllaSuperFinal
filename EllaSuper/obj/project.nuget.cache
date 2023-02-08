@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5jilZg1s0XtS1wxJMBtRGXLL04wuw2nuxSzoInXA0SPlcQrLsn5IknvJ2xvEUAl8ioHjCXGwFs5zxQILF4kBhA==",
+  "dgSpecHash": "+NaaCWq5Y7VUV5D3zZ4cQ94o/1H61yluGgwHpPEr2qrHDFEqRqpBL4FcdOBrbkcsC4yywWWEXpUGBPvoITk2vQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\EllaSuper.csproj",
   "expectedPackageFiles": [
@@ -181,7 +181,8 @@
     "C:\\Users\\Khalilbay\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Khalilbay\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Khalilbay\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Khalilbay\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Khalilbay\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Khalilbay\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512"
   ],
   "logs": []
 }

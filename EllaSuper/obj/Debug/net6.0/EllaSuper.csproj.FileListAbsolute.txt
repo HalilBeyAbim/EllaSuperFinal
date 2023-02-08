@@ -554,3 +554,4 @@ C:\Users\Khalilbay\Desktop\EllaSuperFinal\EllaSuper\obj\Debug\net6.0\scopedcss\p
 C:\Users\Khalilbay\Desktop\EllaSuperFinal\EllaSuper\obj\Debug\net6.0\EllaSuper.csproj.CopyComplete
 C:\Users\Khalilbay\Desktop\EllaSuperFinal\EllaSuper\obj\Debug\net6.0\EllaSuper.genruntimeconfig.cache
 C:\Users\Khalilbay\Desktop\EllaSuperFinal\EllaSuper\obj\Debug\net6.0\ref\EllaSuper.dll
+C:\Users\Khalilbay\Desktop\EllaSuperFinal\EllaSuper\bin\Debug\net6.0\Telegram.Bot.dll

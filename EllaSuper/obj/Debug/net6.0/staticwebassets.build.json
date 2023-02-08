@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vsznr0XiGg93Alcf/lVewPNx1CSWoyIMpcmcLxUYhrY=",
+  "Hash": "5pRGZSn84ZEG5vj1Tvx4QmxxMM+p/ZJcooGfYiuRVu8=",
   "Source": "EllaSuper",
   "BasePath": "_content/EllaSuper",
   "Mode": "Default",
@@ -2497,6 +2497,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\about\\d5aeadac-5ac1-44ff-ac1f-aafc5db0598c-WhatsApp Image 2023-01-17 at 18.44.04.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\about\\e00f3bdd-f07f-4ca0-999e-b7e9e64cbfc5-ris_2.jpg",
+      "SourceId": "EllaSuper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\",
+      "BasePath": "_content/EllaSuper",
+      "RelativePath": "assets/images/about/e00f3bdd-f07f-4ca0-999e-b7e9e64cbfc5-ris_2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\about\\e00f3bdd-f07f-4ca0-999e-b7e9e64cbfc5-ris_2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\about\\e440d6c7-3c17-42ac-acb9-3b11fb789072-nBkSUhL2g1Ivm8qxPqzJrMCqzJ3w-pun2XyQ2q2C_2OZcGuaSnvVjCdg4M4S7FjDvM_AtC_QbIk8W7zj1GdwKSGT_w=La3pwMNQU-zbKOepGNxMwA.jpg",
+      "SourceId": "EllaSuper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\",
+      "BasePath": "_content/EllaSuper",
+      "RelativePath": "assets/images/about/e440d6c7-3c17-42ac-acb9-3b11fb789072-nBkSUhL2g1Ivm8qxPqzJrMCqzJ3w-pun2XyQ2q2C_2OZcGuaSnvVjCdg4M4S7FjDvM_AtC_QbIk8W7zj1GdwKSGT_w=La3pwMNQU-zbKOepGNxMwA.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\about\\e440d6c7-3c17-42ac-acb9-3b11fb789072-nBkSUhL2g1Ivm8qxPqzJrMCqzJ3w-pun2XyQ2q2C_2OZcGuaSnvVjCdg4M4S7FjDvM_AtC_QbIk8W7zj1GdwKSGT_w=La3pwMNQU-zbKOepGNxMwA.jpg"
     },
     {
       "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\banners\\home\\home-1\\banner-2-p.jpg",
@@ -12512,12 +12546,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\banners\\sidebar\\new-arrivals.png"
     },
     {
-      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\blog\\1bd307db-7cab-4ba8-a906-795c3c7b21b8-IMG_0925.jpeg",
+      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\blog\\40918a88-bdb5-49ea-936d-5999921a9a13-fashion-blogger-italiani-696x464.jpg",
       "SourceId": "EllaSuper",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\",
       "BasePath": "_content/EllaSuper",
-      "RelativePath": "assets/images/blog/1bd307db-7cab-4ba8-a906-795c3c7b21b8-IMG_0925.jpeg",
+      "RelativePath": "assets/images/blog/40918a88-bdb5-49ea-936d-5999921a9a13-fashion-blogger-italiani-696x464.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -12526,7 +12560,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\blog\\1bd307db-7cab-4ba8-a906-795c3c7b21b8-IMG_0925.jpeg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\blog\\40918a88-bdb5-49ea-936d-5999921a9a13-fashion-blogger-italiani-696x464.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\blog\\61939a13-25ef-411f-8ad3-7060fe5e8656-moda-plus-size-blog-2.jpg",
+      "SourceId": "EllaSuper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\",
+      "BasePath": "_content/EllaSuper",
+      "RelativePath": "assets/images/blog/61939a13-25ef-411f-8ad3-7060fe5e8656-moda-plus-size-blog-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\blog\\61939a13-25ef-411f-8ad3-7060fe5e8656-moda-plus-size-blog-2.jpg"
     },
     {
       "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\blog\\841f8bf8-2838-4b22-ae30-eb6df485c9e5-WhatsApp Image 2023-01-19 at 19.14.18.jpg",
@@ -12969,6 +13020,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog\\banner-9.png"
+    },
+    {
+      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\blog\\d5c75ef1-9179-48f8-87d1-ac0c6db8b2ad-imagen-destacada-galería.jpg",
+      "SourceId": "EllaSuper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\",
+      "BasePath": "_content/EllaSuper",
+      "RelativePath": "assets/images/blog/d5c75ef1-9179-48f8-87d1-ac0c6db8b2ad-imagen-destacada-galería.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\blog\\d5c75ef1-9179-48f8-87d1-ac0c6db8b2ad-imagen-destacada-galería.jpg"
     },
     {
       "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\card-product\\img-1.jpg",
@@ -16643,6 +16711,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\team\\17c71c49-e931-4e2b-a2f4-0089ad85b462-1658213011122.jpeg"
     },
     {
+      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\team\\1b0ea38e-286c-444a-a879-f2e230511bbe-WhatsApp Image 2023-02-08 at 22.54.02.jpg",
+      "SourceId": "EllaSuper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\",
+      "BasePath": "_content/EllaSuper",
+      "RelativePath": "assets/images/team/1b0ea38e-286c-444a-a879-f2e230511bbe-WhatsApp Image 2023-02-08 at 22.54.02.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\team\\1b0ea38e-286c-444a-a879-f2e230511bbe-WhatsApp Image 2023-02-08 at 22.54.02.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\team\\5c02e77d-d3a2-409a-97e3-5d868719610b-WhatsApp Image 2023-02-08 at 22.52.49.jpg",
+      "SourceId": "EllaSuper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\",
+      "BasePath": "_content/EllaSuper",
+      "RelativePath": "assets/images/team/5c02e77d-d3a2-409a-97e3-5d868719610b-WhatsApp Image 2023-02-08 at 22.52.49.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\team\\5c02e77d-d3a2-409a-97e3-5d868719610b-WhatsApp Image 2023-02-08 at 22.52.49.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\team\\6984a3d8-8912-4cf8-857a-f6081df81ad1-runason.png",
       "SourceId": "EllaSuper",
       "SourceType": "Discovered",
@@ -16658,6 +16760,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\team\\6984a3d8-8912-4cf8-857a-f6081df81ad1-runason.png"
+    },
+    {
+      "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\team\\69b8441b-a3fe-4c33-9a76-be68a34d1c19-WhatsApp Image 2023-02-08 at 22.52.51.jpg",
+      "SourceId": "EllaSuper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\",
+      "BasePath": "_content/EllaSuper",
+      "RelativePath": "assets/images/team/69b8441b-a3fe-4c33-9a76-be68a34d1c19-WhatsApp Image 2023-02-08 at 22.52.51.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\team\\69b8441b-a3fe-4c33-9a76-be68a34d1c19-WhatsApp Image 2023-02-08 at 22.52.51.jpg"
     },
     {
       "Identity": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\EllaSuper\\wwwroot\\assets\\images\\team\\907c2d2a-8f72-4619-9d0d-84254c27852a-runason.png",

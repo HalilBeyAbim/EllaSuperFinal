@@ -22,7 +22,8 @@ namespace Ella.DAL.DAL
         public DbSet<Setting> Settings { get; set; }
         public DbSet<WishList> WishList { get; set; }
         public DbSet<WishListProduct> WishListProduct { get; set; }
-        
+        public DbSet<ContactMessage> ContactMessages { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

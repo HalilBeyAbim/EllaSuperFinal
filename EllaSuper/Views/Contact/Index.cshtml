@@ -1,0 +1,114 @@
+﻿@using EllaSuper.ViewModels
+@model ContactViewModel
+@{
+    var contactMessage = Model.ContactMessage;
+}
+
+    
+<main class="main">
+    <div class="halo-bock halo-googlemap">
+        <div class="container container-full">
+            <div class="block-content">
+                <div class="halo-block-content .halo-row-item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9340444904806!2d106.71818441533426!3d10.816359461411732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175289c3683f2a7%3A0xf8213d8614e6f0b0!2zVGhhbmggxJBhLCBDxrAgeMOhIFRoYW5oIMSQYSwgcGjGsOG7nW5nIDI3LCBCw6xuaCBUaOG6oW5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1647592510766!5m2!1svi!2s" height="365" style="border:0;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End GoogleMap -->
+    <div class="page page-contact">
+        <div class="container container-1170">
+            <div class="heading">
+                <nav class="breadcrumb breadcrumb-left justify-start text-center ">
+                    <a class="link-underline" href="index-2.html"><span class="text">Home</span></a>
+                    <span class="separate" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"></path>
+                        </svg>
+                    </span>
+                    <span class="bread-text">Contact Us</span>
+                </nav>
+                <h3 class="page-title text-left uppercase">contact us</h3>
+                <p class="desc">
+                    Have a question or comment?<br>
+                    Use the form below to send us a message or contact us by mail at:
+                </p>
+            </div>
+            <div class="page-content">
+                <div class="row">
+                    <div class="halo-row-item contact-itemLeft col-md-6 col-lg-6 col-xl-7">
+                        <div class="contact-text">
+                            <form asp-action="AddMessage" method="post" accept-charset="UTF-8" class="contact-form">
+                                <input type="hidden" name="form_type" value="contact">
+                                <input type="hidden" name="utf8" value="✓">
+                                <div class="form-field">
+                                    <label class="form-label">Your Name</label>
+                                    <input class="form-input form-input-placeholder" asp-for="ContactMessage.Name"  type="text" value="@contactMessage.Name">
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label">Your Email<span class="red-asterisk">*</span></label>
+                                    <input class="form-input form-input-placeholder" asp-for="ContactMessage.Email" type="email" value="@contactMessage.Email">
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label">Subject<span class="red-asterisk">*</span></label>
+                                    <input class="form-input form-input-placeholder" asp-for="ContactMessage.Subject" type="text">
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label">Your Comment<span class="red-asterisk">*</span></label>
+                                    <textarea class="form-input form-input-hiddenPlaceholder" asp-for="ContactMessage.Message" rows="8" ></textarea>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="button button-1" > Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="halo-row-item contact-itemRight col-md-6 col-lg-6 col-xl-3 ">
+                        <h3 class="page-subheader contact-title">Get In Touch!</h3>
+                        <p class="desc contact-text">
+                            We'd love to hear from you - please use the form to send us your message or ideas. Or simply pop in for
+                            a cup of fresh tea and a cookie:
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-store">
+                                <div class="info-top">
+                                    <span class="icon">
+                                        <svg data-prefix="fas" data-icon="comment-alt-dots" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-comment-alt-dots fa-w-16 fa-7x">
+                                            <path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zM128 240c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path>
+                                        </svg>
+                                    </span>
+                                    <div class="contact">TEXT: <a href="#">091-123-ELLA</a></div>
+                                </div>
+                                <div class="info-bottom mail">
+                                    <div class="icon">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope fa-w-16 fa-7x">
+                                            <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="contact">
+                                        <a href="mailto:email@domain.com">email@domain.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-address">
+                            <address>
+                                <p>
+                                    685 Market Street<br>
+                                    San Francisco, CA 94105,<br>
+                                    United States
+                                </p>
+                            </address>
+                        </div>
+                        <div class="desc contact-store">
+                            <div class="time">
+                                Opening Hours:<br>
+                                MON to SAT: 9:00AM - 10:00PM<br>
+                                SUN: 10:00AM - 6:00PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Page Contact --> 
+    </div>
+</main><!-- END: main -->
