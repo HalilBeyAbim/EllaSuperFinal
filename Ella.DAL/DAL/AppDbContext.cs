@@ -20,6 +20,9 @@ namespace Ella.DAL.DAL
         public DbSet<Size> Sizes { get; set; }
         public DbSet<Product> Product { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<WishList> WishList { get; set; }
+        public DbSet<WishListProduct> WishListProduct { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

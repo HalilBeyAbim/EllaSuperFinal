@@ -26,9 +26,21 @@ namespace EllaSuper.Controllers
                 Sizes = sizes,
                 Brands = brands
             };
-           
+
             return View(viewModel);
         }
-        
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id is null) return NotFound();
+            var product = await _AppDbContext.Product.Where(c => !c.IsDeleted && c.Id == id)
+                .Include(a => a.Category)
+                .Include(a => a.Brand)
+                .Include(a => a.Size)
+                .FirstOrDefaultAsync();
+            if (product is null) return NotFound();
+
+            return View(product);
+
+        }
     }
 }

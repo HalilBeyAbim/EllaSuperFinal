@@ -61,7 +61,7 @@ namespace EllaSuper.Controllers
 
             HttpContext.Response.Cookies.Append("Basket", basketStr);
 
-            return RedirectToAction(nameof(ShowBasket));
+            return RedirectToAction("Index", "Home");
 
         }
         public IActionResult ShowBasket()

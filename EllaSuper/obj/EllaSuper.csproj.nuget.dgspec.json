@@ -49,9 +49,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.17, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             }
           },
           "imports": [
@@ -269,9 +277,6 @@
             "projectReferences": {
               "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\Ella.BLL\\Ella.BLL.csproj": {
                 "projectPath": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\Ella.BLL\\Ella.BLL.csproj"
-              },
-              "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\Ella.DAL\\Ella.DAL.csproj": {
-                "projectPath": "C:\\Users\\Khalilbay\\Desktop\\EllaSuperFinal\\Ella.DAL\\Ella.DAL.csproj"
               }
             }
           }

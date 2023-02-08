@@ -1,0 +1,216 @@
+﻿@using Ella.Core.Entity
+
+@{
+    Product product = Model;
+}
+
+<main class="main">
+    <div class="product-detail product-layout-default">
+        <div class="container container-1170">
+            <div class="page-header">
+                <nav class="breadcrumb text-left ">
+                    <a class="link-underline" asp-controller="home" asp-action="index" >
+                        <span class="text">Home</span>
+                    </a>
+                    <span class="separate" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"></path>
+                        </svg>
+                    </span>
+                    <span class="bread-text">New In</span>
+                    <span class="separate" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"></path>
+                        </svg>
+                    </span>
+                    <span class="bread-text">@product.Title</span>
+                </nav>
+            
+            </div>
+            <div class="productView halo-productView ">
+                <div class="page-content productView-information" id="ProductContent">
+                    <div class="halo-productView-left productView-images">
+                        <div class="productView-images-wrapper">
+                            <div class="productView-nav" data-arrow="false">
+                                <div class="productView-image">
+                                    <div class="media image-zoom" data-zoom-image="@product.ImageUrl" data-fancybox="gallery" data-src="/assets/images/product/@product.ImageUrl">
+                                        <img src="~/assets/images/product/@product.ImageUrl" alt="Product Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="halo-productView-right productView-details">
+                        <h2 class="productView-title">
+                            @product.Title
+                        </h2>
+                        <div class="productView-meta">
+                        </div>
+                        <div class="productView-short-desc desc">
+                            @product.Description
+                        </div>
+                        <div class="productView-info">
+                            <div class="productView-info-item">
+                                <span class="productView-info-name">Brand:</span>
+                                <span class="productView-info-value"><a href="#" title="@product.Brand">@product.Brand</a></span>
+                            </div>
+                            <div class="productView-info-item" data-sku="">
+                                <span class="productView-info-name">SKU:</span>
+                                <span class="productView-info-value">@product.Barcode</span>
+                            </div>
+                        </div>
+                        <div class="productView-price card-price price__sale">
+                            <div class="price-item price-item--regular">
+                                <span class="money ">$@product.Price</span>
+                            </div>
+                            <div class="price-item price__last">
+                                <span class="money ">$@product.DiscountPrice</span>
+                            </div>
+                        </div>
+                        <div class="productView-variants halo-productOptions">
+                            <div class="product-form__inputs">
+                                <label class="form__label">
+                                    Size:
+                                    <span data-header-option="">@product.ProductSize</span>
+                                </label>
+                                <input class="product-form__radio" type="radio" checked id="option-661763149012328-size-xs" name="option-size" value="Xs">
+                                <label class="product-form__label available " for="option-661763149012328-size-xs">
+                                    <span class="text">XS</span>
+                                </label>
+                                <input class="product-form__radio" type="radio" id="option-66176314901233-size-s" name="option-size" value="S">
+                                <label class="product-form__label soldout" for="option-66176314901233-size-s">
+                                    <span class="text">S</span>
+                                </label>
+                                <input class="product-form__radio" type="radio" id="option-66176314901234-size-m" name="option-size" value="M">
+                                <label class="product-form__label available" for="option-66176314901234-size-m">
+                                    <span class="text">M</span>
+                                </label>
+                                <input class="product-form__radio" type="radio" id="option-66176314901235-size-l" name="option-size" value="L">
+                                <label class="product-form__label available" for="option-66176314901235-size-l">
+                                    <span class="text">L</span>
+                                </label>
+                            </div>
+                            <div class="product-form__input">
+                                <label class="form__label">
+                                    Material:
+                                    <span data-header-option="">@product.SubTitle</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quantity_selector">
+                            <label class="form-label quantity__label">Quantity:</label>
+                            <div class="previewCartItem-qty">
+                                <label class="form-label hiddenLabel" for="upsell-update-395049013412743"></label>
+                                <a href="#" data-minus-quantity-cart="" class="minus btn-quantity"></a>
+                                <input class="form-input quantity" name="quantity" id="upsell-update-395049013412743" data-qtt-id1="quantity39504901341274" value="1" type="number" data-inventory-quantity="4" data-cart-quantity="" data-cart-quantity-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1">
+                                <a href="#" data-plus-quantity-cart="" class="plus btn-quantity"></a>
+                            </div>
+                        </div>
+                        <div class="productView-subtotal">
+                            <span class="text">Subtotal: </span>
+                            <span class="money">$@product.DiscountPrice</span>
+                        </div>
+                        <div class="productView-perks ">
+                            <div class="productView-askAnExpert">
+                                <a class="link link-underline" href="javascript:void(0)" data-open-ask-an-expert="">
+                                    <svg class="icon" viewBox="0 0 512 512"> <path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z" class=""></path> </svg>
+                                    <span class="text">Ask An Expert</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="previewCartAction">
+                            <div class="previewCartGroup">
+                                <form method="post" action="http://themes.halothemes.com/cart/add" id="product-form-6617631490138" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+                                    <input type="hidden" name="form_type" value="product">
+                                    <input type="hidden" name="utf8" value="✓">
+                                    <div class="previewCartGroup-top">
+                                        <div class="productView-action">
+                                            <button type="submit" name="add" data-btn-addtocart class="button-view-cart text-centert button button-1">Add to cart</button>
+                                        </div>
+                                        <div class="productView-wishlist">
+                                            <a data-wishlist="" href="#" data-wishlist-handle="(Product 16) Sample - Clothing And Accessory Boutiques For Sale" data-product-id="6617631490138">
+                                                <span class="visually-hidden">Add to wishlist</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false" role="presentation" class="icon icon-wishlist"><path d="M 9.5 5 C 5.363281 5 2 8.402344 2 12.5 C 2 13.929688 2.648438 15.167969 3.25 16.0625 C 3.851563 16.957031 4.46875 17.53125 4.46875 17.53125 L 15.28125 28.375 L 16 29.09375 L 16.71875 28.375 L 27.53125 17.53125 C 27.53125 17.53125 30 15.355469 30 12.5 C 30 8.402344 26.636719 5 22.5 5 C 19.066406 5 16.855469 7.066406 16 7.9375 C 15.144531 7.066406 12.933594 5 9.5 5 Z M 9.5 7 C 12.488281 7 15.25 9.90625 15.25 9.90625 L 16 10.75 L 16.75 9.90625 C 16.75 9.90625 19.511719 7 22.5 7 C 25.542969 7 28 9.496094 28 12.5 C 28 14.042969 26.125 16.125 26.125 16.125 L 16 26.25 L 5.875 16.125 C 5.875 16.125 5.390625 15.660156 4.90625 14.9375 C 4.421875 14.214844 4 13.273438 4 12.5 C 4 9.496094 6.457031 7 9.5 7 Z"></path></svg>
+                                            </a>
+                                        </div>
+                                        <div class="productView-share">
+                                            <div class="share-content">
+                                                <button class="share-button button">
+                                                    <svg class="icon" viewBox="0 0 227.216 227.216"> <path d="M175.897,141.476c-13.249,0-25.11,6.044-32.98,15.518l-51.194-29.066c1.592-4.48,2.467-9.297,2.467-14.317c0-5.019-0.875-9.836-2.467-14.316l51.19-29.073c7.869,9.477,19.732,15.523,32.982,15.523c23.634,0,42.862-19.235,42.862-42.879C218.759,19.229,199.531,0,175.897,0C152.26,0,133.03,19.229,133.03,42.865c0,5.02,0.874,9.838,2.467,14.319L84.304,86.258c-7.869-9.472-19.729-15.514-32.975-15.514c-23.64,0-42.873,19.229-42.873,42.866c0,23.636,19.233,42.865,42.873,42.865c13.246,0,25.105-6.042,32.974-15.513l51.194,29.067c-1.593,4.481-2.468,9.3-2.468,14.321c0,23.636,19.23,42.865,42.867,42.865c23.634,0,42.862-19.23,42.862-42.865C218.759,160.71,199.531,141.476,175.897,141.476z M175.897,15c15.363,0,27.862,12.5,27.862,27.865c0,15.373-12.499,27.879-27.862,27.879c-15.366,0-27.867-12.506-27.867-27.879C148.03,27.5,160.531,15,175.897,15z M51.33,141.476c-15.369,0-27.873-12.501-27.873-27.865c0-15.366,12.504-27.866,27.873-27.866c15.363,0,27.861,12.5,27.861,27.866C79.191,128.975,66.692,141.476,51.33,141.476z M175.897,212.216c-15.366,0-27.867-12.501-27.867-27.865c0-15.37,12.501-27.875,27.867-27.875c15.363,0,27.862,12.505,27.862,27.875C203.759,199.715,191.26,212.216,175.897,212.216z"></path> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> </svg>
+                                                </button>
+                                                <div class="share-button__fallback">
+                                                    <a class="share-button__close" href="javascript:void(0)" title="Close">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                                            <path d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <label class="form-label">Copy link</label>
+                                                    <div class="share-group">
+                                                        <div class="form-field">
+                                                            <input id="share-url" type="text" class="field__input" value="https://ko4dtz5389gx1c3c-8133050458.shopifypreview.com/products/naminos-dementus-a-dincidunto-6" placeholder="Link" data-url="https://ko4dtz5389gx1c3c-8133050458.shopifypreview.com/products/naminos-dementus-a-dincidunto-6">
+                                                            <label class="field__label hiddenLabel" for="share-url">Link</label>
+                                                        </div>
+                                                        <button class="button button-1 button-copy">
+                                                            <svg class="icon icon-clipboard" width="11" height="13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 1a1 1 0 011-1h7a1 1 0 011 1v9a1 1 0 01-1 1V1H2zM1 2a1 1 0 00-1 1v9a1 1 0 001 1h7a1 1 0 001-1V3a1 1 0 00-1-1H1zm0 10V3h7v9H1z" fill="currentColor"></path>
+                                                            </svg>
+                                                            <span>Copy link</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="previewCartGroup-bottom">
+                                        <div class="previewCartCheckbox global-checkbox">
+                                            <input class="global-checkbox--input" type="checkbox" name="product_conditions_2" id="product_conditions_2_conditions_2" data-target="#product-checkout">
+                                            <label class="global-checkbox--label form-label--checkbox" for="product_conditions_2_conditions_2">I agree with the</label>
+                                            <a href="javascript:void(0)" data-term-condition="">Terms Conditions</a>
+                                        </div>
+                                        <button class="button button-2 button-checkout" disabled="disabled">Buy It Now</button>
+                                    </div>
+                                </form>
+                                <div class="productView-notifyMe halo-notifyMe" style="display: none;">
+                                    <form class="notifyMe-form" method="post" action="http://themes.halothemes.com/cart/add">
+                                        <input type="hidden" name="halo-notify-product-site" value="new-ella-demo">
+                                        <input type="hidden" name="halo-notify-product-site-url" value>
+                                        <input type="hidden" name="halo-notify-product-title" value="Loremour De Saliduar Cosmopolis">
+                                        <input type="hidden" name="halo-notify-product-link" value>
+                                        <input type="hidden" name="halo-notify-product-variant" value="Pink / XS / Option 1">
+                                        <div class="form-field">
+                                            <label class="form-label" for="halo-notify-email66176314901388">
+                                                Leave your email and we will notify as soon as the product / variant is back in stock
+                                            </label>
+                                            <input class="form-input form-input-placeholder" type="email" name="email" required="" id="halo-notify-email66176314901388" placeholder="Insert your email">
+                                            <button type="button" class="button button-1" data-form-notify="">
+                                                Subscribe
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="notifyMe-text"></div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="halo-block halo-product-bundle frequently-bought-together-block" data-product-bundle="" id="halo-product-bundle">
+            <div class="container container-1170">
+                <div class="halo-block-content">
+                    <div class="bundle-product">
+                        <form method="post" action="http://themes.halothemes.com/cart/add" id="product-form-bundle-6617631490138" accept-charset="UTF-8" class="frequently-bought-together-form" enctype="multipart/form-data">
+                            <input type="hidden" name="form_type" value="product">
+                            <input type="hidden" name="utf8" value="✓">
+                            <div class="bundle-product-wrapper" data-product-carousel data-item-to-show="4" data-item-dots="false" data-item-arrows="true" data-item-dots-mb="true" data-item-arrows-mb="false">
+                                <div class="bundle-product-left product-carousel">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END:Products Bundle -->
+    </div>
+</main><!-- END:  main -->

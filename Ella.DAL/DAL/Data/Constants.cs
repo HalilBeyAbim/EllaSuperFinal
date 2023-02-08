@@ -17,5 +17,8 @@ namespace Ella.BLL.Helpers
 
         public const string AdminRole = "Admin";
         public const string UserRole = "User";
+
+
+        public const string WISH_LIST_COOKIE_NAME = "WishList";
     }
 }

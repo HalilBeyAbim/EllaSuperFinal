@@ -2,9 +2,9 @@ using Ella.BLL.Helpers;
 using Ella.Core.Entity;
 using Ella.DAL.DAL;
 using Ella.DAL.DAL.Data;
-using EllaSuper.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Ella.BLL.Service;
 
 namespace EllaSuperFinal
 {
@@ -38,7 +38,8 @@ namespace EllaSuperFinal
             builder.Services.Configure<AdminUser>(builder.Configuration.GetSection("AdminUser"));
 
             builder.Services.AddScoped<LayoutService>();
-            
+            builder.Services.AddHttpContextAccessor();
+
             Constants.RootPath = builder.Environment.WebRootPath;
             Constants.BlogPath = Path.Combine(Constants.RootPath, "assets","images", "blog");
             Constants.AboutPath = Path.Combine(Constants.RootPath, "assets", "images", "about");
@@ -48,6 +49,7 @@ namespace EllaSuperFinal
 
 
             var app = builder.Build();
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

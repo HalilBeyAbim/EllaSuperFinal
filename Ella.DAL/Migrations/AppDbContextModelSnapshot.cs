@@ -183,6 +183,9 @@ namespace Ella.DAL.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int>("ProductSize")
+                        .HasColumnType("int");
+
                     b.Property<int>("SizeId")
                         .HasColumnType("int");
 

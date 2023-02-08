@@ -27,7 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ella.BLL\Ella.BLL.csproj" />
-    <ProjectReference Include="..\Ella.DAL\Ella.DAL.csproj" />
   </ItemGroup>
 
 </Project>
