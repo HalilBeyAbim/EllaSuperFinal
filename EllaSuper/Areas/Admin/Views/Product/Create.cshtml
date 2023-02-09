@@ -4,20 +4,20 @@
 }
 
 <div class="container-xxl flex-grow-1 container-p-y">
-    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"> EduHomeEdit /</span> Course Tables <span> /Create </span></h4>
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> Product Tables <span> /Create </span></h4>
     <div class="row">
         <div class="col-md-12">
             <div class="card mb-4">
-                <h5 class="card-header">Course Tables</h5>
+                <h5 class="card-header">Product Tables</h5>
                 <div class="card-body">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <form method="post" asp-action="Create" enctype="multipart/form-data">
                         <div>
-                            <label asp-for="Title" class="form-label">Title</label>
+                            <label asp-for="Title" class="form-label">Name</label>
                             <input asp-for="Title"
                                    class="form-control"
                                    id="defaultFormControlInput"
-                                   placeholder="Title"
+                                   placeholder="Name"
                                    aria-describedby="defaultFormControlHelp" />
                             <span class="text-danger" asp-validation-for="Title"></span>
 
@@ -43,11 +43,11 @@
                         </div>
 
                         <div>
-                            <label asp-for="Subtitle" class="form-label">Subtitle</label>
+                            <label asp-for="Subtitle" class="form-label">Material</label>
                             <input asp-for="Subtitle"
                                    class="form-control"
                                    id="defaultFormControlInput"
-                                   placeholder="Subtitle"
+                                   placeholder="Material"
                                    aria-describedby="defaultFormControlHelp" />
                             <span class="text-danger" asp-validation-for="Subtitle"></span>
 
@@ -57,7 +57,7 @@
                             <input asp-for="Barcode"
                                    class="form-control"
                                    id="defaultFormControlInput"
-                                   placeholder="HowToApply"
+                                   placeholder="Barcode"
                                    aria-describedby="defaultFormControlHelp" />
                             <span class="text-danger" asp-validation-for="Barcode"></span>
 
@@ -67,7 +67,7 @@
                             <input asp-for="Discount"
                                    class="form-control"
                                    id="defaultFormControlInput"
-                                   placeholder="Certification"
+                                   placeholder="Discount"
                                    aria-describedby="defaultFormControlHelp" />
                             <span class="text-danger" asp-validation-for="Discount"></span>
 
@@ -77,7 +77,7 @@
                             <input asp-for="DiscountPrice"
                                    class="form-control"
                                    id="defaultFormControlInput"
-                                   placeholder="StartTime"
+                                   placeholder="Dicount Price"
                                    aria-describedby="defaultFormControlHelp" />
                             <span class="text-danger" asp-validation-for="DiscountPrice"></span>
 

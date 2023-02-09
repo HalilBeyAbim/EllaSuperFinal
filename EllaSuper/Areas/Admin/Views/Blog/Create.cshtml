@@ -1,13 +1,13 @@
 ﻿@using EllaSuper.Areas.Admin.Models
 @model BlogCreateViewModel
-<div class="row col-sm-6">
+<div class="row col-sm-12">
     <div class="col-sm-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title"> Create category</h4>
+                <h4 class="card-title"> Create Blog</h4>
                 <form class="forms-sample" method="post" asp-action="Create" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label asp-for="Image">Name</label>
+                        <label asp-for="Image">Image</label>
                         <input asp-for="Image" class="form-control" placeholder="Name" accept="image/*">
                         <span asp-validation-for="Image" class="text-danger"></span>
                     </div>

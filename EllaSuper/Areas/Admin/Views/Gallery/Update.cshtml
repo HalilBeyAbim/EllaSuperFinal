@@ -7,12 +7,12 @@
     <div class="col-sm-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title"> Update category</h4>
+                <h4 class="card-title"> Update Gallery</h4>
                 <img src="~/assets/images/gallery/@Model.ImageUrl" style="width:130px;height:130px" />
 
                 <form class="forms-sample" method="post" asp-action="Update" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label asp-for="Image">Name</label>
+                        <label asp-for="Image">Image</label>
                         <input asp-for="Image" class="form-control" placeholder="Name" accept="image/*">
                         <span asp-validation-for="Image" class="text-danger"></span>
                     </div>
