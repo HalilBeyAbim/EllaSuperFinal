@@ -8,8 +8,11 @@ using Ella.BLL.Service;
 
 namespace EllaSuperFinal
 {
+    
+
     public class Program
     {
+        
         public async static Task Main(string[] args)
         {
             var builder = Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(args);
@@ -46,6 +49,9 @@ namespace EllaSuperFinal
             Constants.TeamPath = Path.Combine(Constants.RootPath, "assets", "images", "team");
             Constants.GalleryPath = Path.Combine(Constants.RootPath, "assets", "images", "gallery");
             Constants.ProductPath = Path.Combine(Constants.RootPath, "assets", "images", "product");
+            Constants.BannerPath = Path.Combine(Constants.RootPath, "assets", "images", "banners");
+
+
 
 
             var app = builder.Build();
@@ -87,5 +93,6 @@ namespace EllaSuperFinal
 
             await app.RunAsync();
         }
+        
     }
 }

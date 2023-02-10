@@ -14,11 +14,13 @@ namespace Ella.BLL.Helpers
         public static string TeamPath;
         public static string GalleryPath;
         public static string ProductPath;
+        public static string BannerPath;
 
         public const string AdminRole = "Admin";
         public const string UserRole = "User";
 
 
         public const string WISH_LIST_COOKIE_NAME = "WishList";
+        public const string BASKET_COOKIE_NAME = "BASKET";
     }
 }

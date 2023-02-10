@@ -3,6 +3,8 @@ using Ella.DAL.DAL;
 using EllaSuper.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using Telegram.Bot;
 
 namespace EllaSuper.Controllers
 {
@@ -50,5 +52,7 @@ namespace EllaSuper.Controllers
             
             return RedirectToAction(nameof(Index));
         }
+
     }
+   
 }

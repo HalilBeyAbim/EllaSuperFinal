@@ -108,6 +108,7 @@
                                     <div class="product-card">
                                         <div class="product-card-top">
                                             <div class="product-card-media">
+                                                <input type="hidden" value="@product.Id"/>
                                                 <a asp-controller="product" asp-action="details" asp-route-id="@product.Id" class="animate-scale image image-adapt" style="padding-bottom: 133.33333333333334%">
                                                     <img src="~/assets/images/product/@product.ImageUrl" alt="Halo Product">
                                                 </a>
@@ -119,18 +120,16 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="card-action">
-                                                    <form action="/cart/add" method="post" class="variants" data-product-id="" enctype="multipart/form-data">
-                                                        <a class="button button-ATC text-center" asp-controller="product" asp-action="AddBasket" asp-route-id="@product.Id" data-quickshop-popup="">Add To Cart</a>
-                                                    </form>
+                                                <div class="card-action">                                                    
+                                                                                                           
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-card-bottom">
                                             <div class="product-card-information text-center">
                                                     <span class="text">@product.Title</span>
-                                                <div class="card-summary card-grid-hide desc">
-                                                    @product.Description
+                                                <div class="card-summary card-grid-hide">
+                                                    <a id="add-product-to-cart">Add To Cart</a>
                                                 </div>
                                                 <div class="card-price">
                                                     <div class="price-item">
@@ -161,6 +160,19 @@
     <script src="lib/bootstrap/popper.min.js"></script>
 
     <script>
+        $(document).on('click', '#add-product-to-cart', function () {
+
+            var productId = $(this).parent().parent().parent().parent().children().children().children().val();
+            console.log(productId)
+            $.ajax({
+                type: "POST",
+                url: '/Basket/AddToBasket',
+                data: { productId: productId },
+                success: function () {
+                },
+            });
+
+        })
         $(document).on('click','#productLink', function(){
             var productId = $(this).children('#productId').val();
             console.log(productId); 
