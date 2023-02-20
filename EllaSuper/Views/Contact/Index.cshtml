@@ -1,5 +1,7 @@
-﻿@using EllaSuper.ViewModels
+﻿@using Ella.BLL.Service
+@using EllaSuper.ViewModels
 @model ContactViewModel
+@inject LayoutService layoutService
 @{
     var contactMessage = Model.ContactMessage;
 }
@@ -76,7 +78,7 @@
                                             <path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zM128 240c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path>
                                         </svg>
                                     </span>
-                                    <div class="contact">TEXT: <a href="#">+994556711581</a></div>
+                                    <div class="contact">Tel: <a href="tel://@layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="phonenumber")?.Value ">@layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="phonenumber")?.Value</a></div>
                                 </div>
                                 <div class="info-bottom mail">
                                     <div class="icon">
@@ -93,17 +95,17 @@
                         <div class="contact-address">
                             <address>
                                 <p>
-                                  Port Baku Tower<br>
-                                    Baku,<br>
-                                   Azerbaijan
+                                 @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="adress")?.Value<br>
+                                 @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="city")?.Value<br>
+                                 @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="country")?.Value
                                 </p>
                             </address>
                         </div>
                         <div class="desc contact-store">
                             <div class="time">
                                 Opening Hours:<br>
-                                MON to SAT: 9:00AM - 10:00PM<br>
-                                SUN: 10:00AM - 6:00PM
+                                @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="opentime")?.Value<br>
+                                @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="opentimesunday")?.Value
                             </div>
                         </div>
                     </div>

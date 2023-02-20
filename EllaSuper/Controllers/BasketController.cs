@@ -76,7 +76,7 @@ namespace EllaSuper.Controllers
                     {
                         var product = _dbContext.Product
                             .Where(p => p.Id == item.Id && !p.IsDeleted)
-                            .Include(x => x.ImageUrl)
+                            
                             .FirstOrDefault();
 
                         model.Add(new BasketProductViewModel
@@ -88,7 +88,7 @@ namespace EllaSuper.Controllers
                             DiscountPrice = product.DiscountPrice,
                             Brand = product.Brand,
                             size = product.Size,
-                            
+                            Images = product.ImageUrl,  
 
                         });
                     }
@@ -251,7 +251,8 @@ namespace EllaSuper.Controllers
                 }
             }
 
-            return NoContent();
+                return NoContent();
+            
         }
 
         [HttpPost]

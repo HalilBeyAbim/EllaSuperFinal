@@ -220,7 +220,7 @@
                                     </svg>
                                     <span class="text">Shopping Cart</span>
                                     <div class="cart-count-bubble">
-                                        <span class="text-count" aria-hidden="true" data-cart-count="">@(layoutService.GetBasket() != null ? layoutService.GetBasket().basketItemViewModels.Count.ToString() : "0")</span><span class="visually-hidden"></span>
+                                        <span class="text-count" aria-hidden="true" data-cart-count=""> 0</span><span class="visually-hidden"></span>
                                     </div>
                                 </a>
 
@@ -376,24 +376,69 @@
                             <div class="row">
                                 <div class="halo-row-item col-footer col-12 col-md-4">
                                     <h3 class="footer-block__heading dropdow-mb uppercase" data-toggle-column>
-                                        <span>Shop</span>
+                                        <span> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="shop")?.Value</span>
                                     </h3>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a asp-controller="product" asp-action="index" title="Shop" class="link link-underline footer-link">
+                                                <span class="text"> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="shop1")?.Value</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="wishlist" asp-action="index" title="Wishlist" class="link link-underline footer-link">
+                                                <span class="text"> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="wish")?.Value</span>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="halo-row-item col-footer col-12 col-md-4">
                                     <h3 class="footer-block__heading dropdow-mb uppercase" data-toggle-column>
-                                        <span>INFORMATION</span>
+                                        <span> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="info")?.Value</span>
                                     </h3>
                                     <ul class="list-unstyled">
                                         <li>
-                                            <a href="about-us.html" title="About" class="link link-underline footer-link">
-                                                <span class="text">About</span>
+                                            <a asp-controller="about" asp-action="index" title="About" class="link link-underline footer-link">
+                                                <span class="text"> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="about")?.Value</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="blog-default.html" title="Sale Special Offers" class="link link-underline footer-link">
-                                                <span class="text">Blog</span>
+                                            <a asp-controller="blog" asp-action="index" title="Blog" class="link link-underline footer-link">
+                                                <span class="text"> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="blog")?.Value</span>
                                             </a>
+                                        </li>
+                                         <li>
+                                            <a asp-controller="contact" asp-action="index" title="Contact" class="link link-underline footer-link">
+                                                <span class="text"> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="contact")?.Value</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="halo-row-item col-footer col-12 col-md-4">
+                                    <h3 class="footer-block__heading dropdow-mb uppercase" data-toggle-column>
+                                        <span> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="ouradress")?.Value</span>
+                                    </h3>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="https://wa.me/994556711581" title="Number" class="link link-underline footer-link">
+                                                <i class="fa-solid fa-phone"></i>
+                                                <i class="fa-brands fa-whatsapp"></i> 
+                                                <span  class="text"> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="phonenumber")?.Value</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <p title="Adress" class="link link-underline footer-link">
+                                                <span class="text"> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="adress")?.Value</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p title="City" class="link link-underline footer-link">
+                                                <span class="text"> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="city")?.Value</span>
+                                            </p>
+                                        </li>
+                                         <li>
+                                            <p title="Country" class="link link-underline footer-link">
+                                                <span class="text"> @layoutService.GetSettings().FirstOrDefault(p=>p.Key.Trim().ToLower()=="country")?.Value</span>
+                                            </p>
                                         </li>
                                     </ul>
                                 </div>

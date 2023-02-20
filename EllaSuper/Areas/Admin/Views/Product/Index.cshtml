@@ -12,7 +12,7 @@
 
         <!-- Basic Bootstrap Table -->
         <div class="card">
-            <a asp-controller="Product" asp-action="Create" class=" btn btn-primary btn-lg"> Create Product </a>
+            <a asp-controller="Product" asp-action="Create" class="btn btn-primary btn-lg"> Create Product </a>
             <div class="table-responsive text-nowrap">
                 <table class="table">
                     <thead class="thead-dark">
@@ -34,7 +34,7 @@
                     {
                         <tbody class="table-border-bottom-0">
                             <tr>
-                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@product.Title</strong></td>
+                                <td> <strong>@product.Title</strong></td>
                                 <td>@product.Description</td>
                                 <td>@product.SubTitle</td>
                                 <td>
@@ -43,7 +43,7 @@
                                         data-popup="tooltip-custom"
                                         data-bs-placement="top"
                                         class="avatar avatar-xs pull-up">
-                                            <img  src="~/admin/assets/img/product/@product.ImageUrl" alt="Avatar" class="rounded-circle" />
+                                            <img  style="border-radius:0px; object-fit:contain;"  src="~/assets/images/product/@product.ImageUrl" alt="Avatar">
                                         </li>
 
                                     </ul>
